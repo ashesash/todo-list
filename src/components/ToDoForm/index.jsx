@@ -17,7 +17,7 @@ function ToDoForm(props) {
     return (
         <form onSubmit={handleSubmit}>
             {/* <input type = "text" placeholder="Add to do" onChange={(event) => console.log(event.target.value)}/> */}
-            <input type="text" placeholder="Add to do" onChange={(event) => setValue(event.target.value)} />
+            <input type="text" value={value} placeholder="Add to do" onChange={(event) => setValue(event.target.value)} />
         </form>
     )
 };
